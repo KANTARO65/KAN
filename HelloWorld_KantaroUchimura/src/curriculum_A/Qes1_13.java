@@ -42,21 +42,21 @@ public class Qes1_13 {
 
 		//改行
 		System.out.println("");
-		// 11110
+		//11110
 		System.out.println(example1 + example2 + example3 + example4);
-		// 20
+		//20
 		System.out.println(example3 - (example1 + example2 + (int)example5 * 90));
-		// a ハロー true
+		//a ハロー true
 		System.out.println(example7 + " " + example8 + " " + example9);
-		// 11130
+		//11130
 		long sumAll = example1 + example2 + example3 + example4 + (long)example5 + (long)example6;
 		System.out.println(sumAll);
-		// 10000000000
+		//10000000000
 		long productAll = example1 * example2 * example3 * example4;
 		System.out.println(productAll);
-		// 0.105
+		//0.105
 		System.out.println(example6 / 100);
-		// -90
+		//-90
 		System.out.println(example1 - example2);
 
 		//改行
@@ -69,7 +69,7 @@ public class Qes1_13 {
 
 		//改行
 		System.out.println("");
-		// 『山田太郎 18歳 170.5cm 62.2kg 寿司』
+		//『山田太郎 18歳 170.5cm 62.2kg 寿司』
 		String name = "山田太郎";
 		int age = 18;
 		double height = 170.5;
@@ -85,9 +85,9 @@ public class Qes1_13 {
 		age += 24;
 		height += 168.5;
 		weight += 64.2;
-		// 身長を m に変換
+		//身長を m に変換
 		double heightMeter = height / 100;
-		// BMI計算
+		//BMI計算
 		double bmi = weight / (heightMeter * heightMeter);
 		//出力先
 		System.out.println("初めまして" + name + "です");
@@ -97,32 +97,32 @@ public class Qes1_13 {
 		System.out.println("好きな食べ物は" + favoriteFood + "です");
 		//BMI
 		System.out.println("BMIは" + String.format("%.2f", bmi) + "です");
-		
+
 		//改行
 		System.out.println("");
 		//25歳以上ならtrue表示
 		System.out.println(age >= 25);
-		
+
 		//改行
 		System.out.println("");
 		//年齢・身長・体重文字列変換
 		String ageStr = String.valueOf(age);
-        String heightStr = String.valueOf(height);
-        String weightStr = String.valueOf(weight);
-        String result = ageStr + heightStr + weightStr;
-        System.out.println("文字列変換及び結合結果:" + result);
-        
-        //改行
-        System.out.println("");
-        //年齢・身長整数型変換
-        int ageInt = Integer.parseInt(ageStr);
-        int heightInt = (int) Double.parseDouble(heightStr);
-        System.out.println("整数型年齢:" + ageInt);
-        System.out.println("整数型身長:" + heightInt);
-        
-        //改行
-        System.out.println("");
-        //年齢が25もしくは身長が160以上ならtrue表示
-        System.out.println(ageInt >= 25 || heightInt >= 160);
+		String heightStr = String.valueOf(height);
+		String weightStr = String.valueOf(weight);
+		String result = ageStr + heightStr + weightStr;
+		System.out.println("文字列変換及び結合結果:" + result);
+
+		//改行
+		System.out.println("");
+		//年齢・身長整数型変換
+		int ageInt = Integer.parseInt(ageStr);
+		int heightInt = (int) Double.parseDouble(heightStr);
+		System.out.println("整数型年齢:" + ageInt);
+		System.out.println("整数型身長:" + heightInt);
+
+		//改行
+		System.out.println("");
+		//年齢が25もしくは身長が160以上ならtrue表示
+		System.out.println(ageInt >= 25 || heightInt >= 160);
 	}
 }
