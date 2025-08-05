@@ -39,7 +39,7 @@ public class Qes1_13 {
 		boolean example9;
 		example9 =  true;
 		System.out.println(example9);
-		
+
 		//改行
 		System.out.println("");
 		// 11110
@@ -58,7 +58,7 @@ public class Qes1_13 {
 		System.out.println(example6 / 100);
 		// -90
 		System.out.println(example1 - example2);
-		
+
 		//改行
 		System.out.println("");
 		//ハローJAVA43
@@ -66,7 +66,7 @@ public class Qes1_13 {
 		int num1=23;
 		int sum = Integer.parseInt(num) + num1;
 		System.out.println("ハローJAVA"+sum);
-		
+
 		//改行
 		System.out.println("");
 		// 『山田太郎 18歳 170.5cm 62.2kg 寿司』
@@ -76,14 +76,18 @@ public class Qes1_13 {
 		double weight = 62.2;
 		String favoriteFood = "寿司";
 		//再代入
-        name = "鈴木一郎";
-        age = 24;
-        height = 168.5;
-        weight = 64.2;
-        favoriteFood = "オムライス";
+		name = "鈴木一郎";
+		age = 24;
+		height = 168.5;
+		weight = 64.2;
+		favoriteFood = "オムライス";
+		//和算で自己代入
+		age += 24;
+		height += 168.5;
+		weight += 64.2;
 		// 身長を m に変換
-        double heightMeter = height / 100;
-        // BMI計算
+		double heightMeter = height / 100;
+		// BMI計算
 		double bmi = weight / (heightMeter * heightMeter);
 		//出力先
 		System.out.println("初めまして" + name + "です");
@@ -92,6 +96,33 @@ public class Qes1_13 {
 		System.out.println("体重は" + weight + "kgです");
 		System.out.println("好きな食べ物は" + favoriteFood + "です");
 		//BMI
-		System.out.println("BMIは" + String.format("%.1f", bmi) + "です");
+		System.out.println("BMIは" + String.format("%.2f", bmi) + "です");
+		
+		//改行
+		System.out.println("");
+		//25歳以上ならtrue表示
+		System.out.println(age >= 25);
+		
+		//改行
+		System.out.println("");
+		//年齢・身長・体重文字列変換
+		String ageStr = String.valueOf(age);
+        String heightStr = String.valueOf(height);
+        String weightStr = String.valueOf(weight);
+        String result = ageStr + heightStr + weightStr;
+        System.out.println("文字列変換及び結合結果:" + result);
+        
+        //改行
+        System.out.println("");
+        //年齢・身長整数型変換
+        int ageInt = Integer.parseInt(ageStr);
+        int heightInt = (int) Double.parseDouble(heightStr);
+        System.out.println("整数型年齢:" + ageInt);
+        System.out.println("整数型身長:" + heightInt);
+        
+        //改行
+        System.out.println("");
+        //年齢が25もしくは身長が160以上ならtrue表示
+        System.out.println(ageInt >= 25 || heightInt >= 160);
 	}
 }
