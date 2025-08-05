@@ -5,40 +5,50 @@ public class Qes1_13 {
 	public static void main(String[] args) {
 		//バイト型変数	
 		byte example1;
-		example1 = 10;
+		example1 = 0;
 		System.out.println(example1);
 		//短整数型
 		short example2;
-		example2 = 100;
+		example2 = 0;
 		System.out.println(example2);
 		//整数型
 		int example3;
-		example3 = 1000;
+		example3 = 0;
 		System.out.println(example3);
 		//長整数型
 		long example4;
-		example4 = 10000l;
+		example4 = 0l;
 		System.out.println(example4);
 		//単精度浮動小数点数型
 		float example5;
-		example5 = 9.5f;
+		example5 = 0.0f;
 		System.out.println(example5);
 		//倍精度浮動小数点数型
 		double example6;
-		example6 = 10.5;
+		example6 = 0.0;
 		System.out.println(example6);
 		//文字型
 		char example7;
-		example7 = 'a';
+		example7 = '\u0000';
 		System.out.println(example7);
 		//文字列型
 		String example8;
-		example8 = "ハロー";
+		example8 = null;
 		System.out.println(example8);
 		//ブーリアン型
 		boolean example9;
-		example9 =  true;
+		example9 =  false;
 		System.out.println(example9);
+		//再代入
+		example1 = 10;
+		example2 = 100;
+		example3 = 1000;
+		example4 = 10000l;
+		example5 = 9.5f;
+		example6 = 10.5;
+		example7 = 'a';
+		example8 = "ハロー";
+		example9 = true;
 
 		//改行
 		System.out.println("");
