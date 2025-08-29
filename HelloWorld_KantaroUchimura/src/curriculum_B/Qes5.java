@@ -17,7 +17,7 @@ public class Qes5 {
 				line += formattedI + " * " + formattedJ + " = " + result;
 
 				//区切り文字
-				if (j < 20) {
+				if (i < 20) {
 					line += " || ";
 				}
 			}
