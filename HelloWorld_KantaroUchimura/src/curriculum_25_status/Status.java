@@ -5,19 +5,22 @@ import java.util.Random;
 public class Status extends Character {
 
 	//各ステータスをランダム値で初期化
+	private static final Random rand = new Random();
+
+	//コンストラクタ
 	public Status(String name) {
 		super(
 				name,
 				//HP
-				new Random().nextInt(1000),
+				rand.nextInt(1000) + 1,
 				//MP
-				new Random().nextInt(1000),
+				rand.nextInt(1000) + 1,
 				//攻撃力
-				new Random().nextInt(500),
+				rand.nextInt(500) + 1,
 				//素早さ
-				new Random().nextInt(1000),
+				rand.nextInt(1000) + 1,
 				//防御力
-				new Random().nextInt(100)
+				rand.nextInt(100) + 1
 				);
 	}
 
@@ -34,4 +37,3 @@ public class Status extends Character {
 		System.out.println("さあ冒険に出かけよう！");
 	}
 }
-
