@@ -26,7 +26,10 @@ class Person {
 
 	//BMI
 	double bmi() {
-		return this.weight / (this.height * this.height);
+		double value = this.weight / (this.height * this.height);
+		//小数点第1位切り捨て
+		value = Math.floor(value);
+		return value;
 	}
 
 	//出力
