@@ -6,7 +6,16 @@ class Person{
 	private String lastName;
 	private int age;
 	private double height, weight;
-	
+
+	//初期コンストラクタ
+	Person(String firstName, int age, double height, double weight){
+		this.firstName = firstName;
+		this.age = age;
+		this.height = height;
+		this.weight = weight;
+	}
+
+	//追加コンストラクタ
 	Person(String firstName, String lastName, int age, double height, double weight){
 		this.firstName = firstName;
 		this.lastName = lastName;
